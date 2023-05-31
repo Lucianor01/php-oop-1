@@ -14,9 +14,16 @@ class Movie
         $this->regista = $regista;
         $this->anno = $anno;
     }
+
+    public function setTitle()
+    {
+        return $this->titolo;
+    }
 }
 
 $joker = new Movie('Joker', 'Thriller/Drammatico', 'Todd Phillips', '2019');
+
+echo $joker->setTitle();
 
 // $joker->titolo = 'Joker';
 // $joker->genere = 'Thriller/Drammatico';
@@ -26,6 +33,8 @@ $joker = new Movie('Joker', 'Thriller/Drammatico', 'Todd Phillips', '2019');
 var_dump($joker);
 
 $the_Batman = new Movie('The Batman', 'Azione/Giallo', 'Matt Reeves', '2022');
+
+echo $the_Batman->setTitle();
 
 // $the_Batman->titolo = 'The Batman';
 // $the_Batman->genere = 'Azione/Giallo';
